@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.header {
+  background: $dark-blue;
+  color: $light;
+  margin-bottom: $m-size;
+  padding: $m-size 0;
+}
+
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
+}
+
+
+.seq-field {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size
+}   
+
+
+.seq-field__input {
+  background: $light;
+  border: none;
+  color: $dark-blue;
+  border-bottom: .3rem solid darken($light, 30%);
+  flex-grow: 1;
+  padding: $s-size;
+  margin: 0 0 $s-size 0 ;
+}   
+
+.button {
+  background: $blue;
+  border: none;
+  border-bottom: .3rem solid darken($blue, 30%);
+  color: $light;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+.output {
+  color: $light;
+  border: none;
+  background: $dark-blue;
+  border-bottom: .3rem solid lighten($dark-blue, 30%);
+  flex-grow: 1;
+  padding: $s-size;
+  margin: 0 0 $s-size 0 ;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .seq-field {
+      flex-direction: row;
+  }
+
+  .seq-field__input {
+      margin: 0 $s-size 0 0 ;
+  }
+}
