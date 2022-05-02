@@ -74,7 +74,7 @@ class RevComp extends React.Component {
             <div>
             <Header />
             <div className='container'>
-              <h1>Reverse complement tool (using Biopython in Pyodide)</h1> 
+              <h1>DNA Reverse complement tool</h1> 
               <h2>Paste nucleotide sequence here</h2>
               <div className="seq-field">
                 <textarea id='seq-input' className="seq-field__input" name="seq" onChange={this.updateSeq}></textarea>
